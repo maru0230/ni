@@ -1,0 +1,45 @@
+
+
+
+  <section>
+    <header>
+      <div class="card mat-card" id="first-card">
+        <div id="profile-background">
+          <img id="info-back-img"
+            [src]="miPorfolio.backImage"/>
+        </div>
+        <div id="info" style="padding: 16px">
+          <div id="info-img">
+            <img id="info-user-img" class="profile-image"
+              src="assets/miFoto.jpg">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"
+                  onclick="showEditProfileModal()"></i></a></div>
+          </div>
+          <div id="info-data">
+            <div>
+              <h1 id="info-name">{{miPorfolio.name}}</h1>
+              <div><span id="info-position">{{miPorfolio.position}}</span></div>
+              <div id="info-contact">
+                <span id="info-ubication">{{miPorfolio.ubication}}</span>
+                <span><a href="#">Información de contacto</a></span>
+              </div>
+            </div>
+            <ul id="info-details">
+              <li><a href="#">
+                  <img id="info-company-img"
+                    src="https://enoru.cancilleria.gob.ar/userfiles/styles/full/public/inti_logo_1.png?itok=tDc7IUTw">
+                  <h2 id="info-company-name">INTI</h2>
+                </a></li>
+              <li><a href="#">
+                  <img id="info-school-img" src="https://filer.365.clarin.com/filer/materiales-salesforce/prod/201701/06/201701-06-c348d4f4-cefe-451b-8b8a-3d16d9a6870a.jpg">
+                  <h2 id="info-school-name">Universidad Abierta Interamericana</h2>
+                </a></li>
+            </ul>
+          </div>
+          <div id="info-actions">
+            <button type="button" class="btn btn-primary">Tengo interés en</button>
+            <button type="button" class="btn btn-light">Añadir Sección</button>
+            <button type="button" class="btn btn-light">Más</button>
+          </div>
+        </div>
+      </div>
